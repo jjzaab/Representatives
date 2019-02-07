@@ -69,7 +69,6 @@
 			children = (
 				3FC58CD3220CCE1F007C13F0 /* Representative.swift */,
 				B755BBC7219DE95C00A9E085 /* States.swift */,
-				3FC58CE0220CDA8E007C13F0 /* RepresentativeTableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +88,22 @@
 				3FC58CD7220CCFF8007C13F0 /* RepresentativeController.swift */,
 			);
 			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		3FC58CE2220CE2EF007C13F0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B755BBB9219DE93E00A9E085 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3FC58CE3220CE30C007C13F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FC58CE0220CDA8E007C13F0 /* RepresentativeTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B755BBA9219DE93E00A9E085 = {
@@ -111,8 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				B755BBB5219DE93E00A9E085 /* AppDelegate.swift */,
-				B755BBB9219DE93E00A9E085 /* Main.storyboard */,
 				3FC58CDB220CD876007C13F0 /* Model */,
+				3FC58CE2220CE2EF007C13F0 /* Storyboards */,
+				3FC58CE3220CE30C007C13F0 /* Views */,
 				3FC58CD6220CCF53007C13F0 /* Controllers */,
 				3FC58CD5220CCF3B007C13F0 /* Resources */,
 			);

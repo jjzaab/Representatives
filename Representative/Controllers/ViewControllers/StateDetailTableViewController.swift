@@ -10,6 +10,7 @@ import UIKit
 
 class StateDetailTableViewController: UITableViewController {
     
+    // Landing pads
     var state: String?
     var representatives: [Representative] = [] {
         didSet {
@@ -21,7 +22,6 @@ class StateDetailTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         if let state = state {
             RepresentativeController.searchRepresentatives(forState: state) { (representatives) in
                 self.representatives = representatives
@@ -36,7 +36,6 @@ class StateDetailTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return representatives.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "representativeCell", for: indexPath) as? RepresentativeTableViewCell else { return UITableViewCell() }
